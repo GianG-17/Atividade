@@ -51,3 +51,12 @@ function frear(veiculo: Veiculo): void{
     veiculo.velocidade -= veiculo.potencia*0.1;
     console.log(veiculo.velocidade);
 }}
+
+function descerMarcha(veiculo: Veiculo): void {
+    if(veiculo.marchaAtual > 0) {
+        veiculo.marchaAtual--;
+        console.log(`Marcha atual: ${veiculo.marchaAtual}`);
+    } else {
+        console.log("Já está em ponto morto!");
+    }
+}
